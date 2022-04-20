@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E040FB"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".GameStartMenu">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="serif"
+        android:gravity="center_horizontal"
+        android:text="Welcome To Tic Tac Toe Game"
+        android:textColor="#FFAB40"
+        android:textSize="58sp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:gravity="center_vertical"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="48dp"
+        android:layout_marginEnd="24dp"
+        android:background="@color/material_dynamic_neutral90"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_marginStart="10dp"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:adjustViewBounds="true"
+            android:src="@drawable/cross" />
+
+        <EditText
+            android:id="@+id/FirstPlayer"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="24dp"
+            android:layout_marginEnd="24dp"
+            android:background="@color/material_dynamic_neutral90"
+            android:hint="FIRST PLAYER"
+            android:textColor="@color/dark_blue"
+            android:textColorHint="@color/material_dynamic_neutral_variant50" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:gravity="center_vertical"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="24dp"
+        android:background="@color/material_dynamic_neutral90"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_marginStart="10dp"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:adjustViewBounds="true"
+            android:src="@drawable/nought" />
+
+        <EditText
+            android:id="@+id/SecondPlayer"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="24dp"
+            android:layout_marginEnd="24dp"
+            android:background="@color/material_dynamic_neutral90"
+            android:hint="SECOND PLAYER"
+            android:textColor="@color/dark_blue"
+            android:textColorHint="@color/material_dynamic_neutral_variant50" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/StartButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="80dp"
+        android:layout_marginTop="96dp"
+        android:layout_marginEnd="80dp"
+        android:background="@drawable/button_round"
+        android:fontFamily="serif"
+        android:text="Start"
+        android:textColor="@color/white"
+        android:textSize="30sp"
+        android:textStyle="bold"/>
+
+
+</LinearLayout>
